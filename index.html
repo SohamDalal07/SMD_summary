@@ -12,6 +12,89 @@
    <link rel="stylesheet" href="assets/css/styles.css">
 
    <title>Soham Dalal | UI/UX Portfolio & Case Studies</title>
+
+
+<style id="portfolio-alignment-fix">
+/* Home section alignment adjustment */
+.home__container {
+   width: min(100% - 48px, 1100px);
+   margin-inline: auto;
+   padding-inline: 0;
+   box-sizing: border-box;
+}
+
+.home__info {
+   max-width: 330px;
+   margin-left: 0;
+}
+
+.home__description {
+   max-width: 330px;
+   margin-left: 0;
+}
+
+.home__perfil {
+   justify-self: center;
+}
+
+.home__social {
+   justify-self: center;
+}
+
+@media screen and (min-width: 968px) {
+   .home__container {
+      grid-template-columns: minmax(250px, 0.9fr) minmax(360px, 1.1fr) 70px;
+      column-gap: 28px;
+      align-items: center;
+   }
+
+   .home__name {
+      align-self: center;
+      justify-self: start;
+      margin-left: 0;
+   }
+
+   .home__info {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: start;
+      justify-self: start;
+      margin-top: 18px;
+   }
+
+   .home__perfil {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      margin-inline: auto;
+   }
+
+   .home__social {
+      grid-column: 3;
+      grid-row: 1 / 3;
+   }
+}
+
+@media screen and (max-width: 967px) {
+   .home__container {
+      width: min(100% - 32px, 700px);
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .home__container {
+      width: min(100% - 32px, 500px);
+   }
+
+   .home__info {
+      max-width: 100%;
+   }
+
+   .home__description {
+      max-width: 100%;
+   }
+}
+</style>
+
 </head>
 
 <body>
